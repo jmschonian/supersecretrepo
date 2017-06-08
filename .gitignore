@@ -13,6 +13,9 @@
 *.log
 *.tlog
 *.idb
+*.suo
+*.db-shm
+*.db-wal
 
 # Precompiled Headers
 *.gch

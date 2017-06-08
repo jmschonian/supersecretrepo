@@ -1,7 +1,5 @@
 #pragma once
 
-static Renderer gRenderer;
-
 class Renderer
 {
 public:
@@ -11,3 +9,4 @@ public:
 	void free();
 };
 
+static Renderer gRenderer;

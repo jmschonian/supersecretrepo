@@ -1,4 +1,5 @@
 #pragma once
+
 class ObjectManager
 {
 public:
@@ -8,3 +9,4 @@ public:
 	void free();
 };
 
+static ObjectManager gObjectManager;

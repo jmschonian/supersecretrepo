@@ -8,6 +8,11 @@
 *.obj
 *.ilk
 *.pdb
+*.db
+*.ipch
+*.log
+*.tlog
+*.idb
 
 # Precompiled Headers
 *.gch

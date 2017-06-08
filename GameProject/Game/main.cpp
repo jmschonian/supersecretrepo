@@ -1,10 +1,10 @@
 #include "pch.h"
+#include "../Core/ObjectManager.h";
+#include "../Renderer/Renderer.h";
+
 
 int main(int argc, char argv[])
 {
-	printf("Testing\n");
-	getchar();
-
 	Vector2 v;
 
 	return 0;

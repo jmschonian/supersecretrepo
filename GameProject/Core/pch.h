@@ -6,3 +6,5 @@
 #include <DirectXColors.h>
 
 #include <algorithm>
+
+using namespace DirectX;

@@ -120,7 +120,7 @@ int WINAPI WinMain(HINSTANCE hIstance, HINSTANCE hPrevInstance, PSTR pScmdline, 
 			DispatchMessage(&message);
 		}
 
-		gObjectManager.update();
+		gObjectManager.update(0.0f);
 		gRenderer.update();
 	}
 

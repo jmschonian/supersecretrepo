@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "GameObject.h"
 
-CGameObject::CGameObject()
+CGameObject::CGameObject() : mScale(1), mIsMarkedForDeath(false), mIsFree(true), mTags(0)
 {
 }
 
@@ -15,22 +15,29 @@ void CGameObject::Init()
 
 void CGameObject::Free()
 {
+	mScale = 1;
+	mIsMarkedForDeath = false;
+	mIsFree = true;
+	mTags = 0;
+	mComponents.clear();
 }
 
 void CGameObject::MarkForDeath()
 {
+	this->mIsMarkedForDeath = true;
 }
 
 bool CGameObject::IsMarkedForDeath()
 {
-	return false;
+	return this->mIsMarkedForDeath;
 }
 
 void CGameObject::AddTag(const ETags tag)
 {
+	mTags |= 1 << tag;
 }
 
 bool CGameObject::HasTag(const ETags tag) const
 {
-	return false;
+	return (mTags & 1 << tag);
 }

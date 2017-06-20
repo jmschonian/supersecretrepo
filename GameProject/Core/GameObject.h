@@ -55,4 +55,5 @@ private:
 	std::unordered_map<std::string, IComponent*> mComponents;
 	int mTags;
 	bool mIsMarkedForDeath;
+	bool mIsFree;
 };

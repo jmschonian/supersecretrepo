@@ -110,6 +110,7 @@ int WINAPI WinMain(HINSTANCE hIstance, HINSTANCE hPrevInstance, PSTR pScmdline, 
 	ZeroMemory(&message, sizeof(message));
 
 	Init();
+	CGameObject gameObject;
 
 	while (!gQuit)
 	{
